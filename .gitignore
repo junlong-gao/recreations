@@ -1,0 +1,33 @@
+*.dSYM
+# OSX files
+.DS_Store
+*.idea
+*vs
+*.vxcode
+*settings.json
+*.*.swp
+*.out
+
+*.pyc
+*_build*
+*.merlin*
+
+# Java build artifacts class files
+*.class
+
+# other generated files
+bin/
+gen/
+build/
+
+# local configuration file (for Android sdk path, etc)
+local.properties
+
+# Eclipse project files
+.classpath
+.project
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
