@@ -1,13 +1,7 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
+#include <gtest/gtest.h>
+#include <cassert>
+#include "src/code_practise/leetcode/lib/slist.h"
+
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
@@ -31,3 +25,14 @@ public:
         return dummy.next;
     }
 };
+
+TEST(Basic, BasicAssertions) {
+    Solution s;
+
+    ListNode l1 = ListNode(1);
+    ListNode l2 = ListNode(2);
+
+    ListNode *rst = s.addTwoNumbers(&l1, &l2);
+
+    EXPECT_EQ(rst->val, 3);
+}

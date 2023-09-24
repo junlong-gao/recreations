@@ -19,6 +19,10 @@ public:
     }
 };
 
+/*
+bazel test --cxxopt=-std=c++14 --test_output=all //src/code_practise/leetcode/00001:test
+*/
+
 TEST(HelloTest, BasicAssertions) {
     Solution s;
     auto in = vector<int>{2, 3};
