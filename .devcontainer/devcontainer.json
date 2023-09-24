@@ -1,0 +1,14 @@
+{
+	"name": "Debian",
+	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"features": {
+		"ghcr.io/balazs23/devcontainers-features/bazel:1": {}
+	},
+
+    "customizations": {
+        "vscode": {
+          "extensions": ["bazelbuild.vscode-bazel"]
+        }
+    },
+    "remoteUser": "vscode"
+}
