@@ -10,5 +10,7 @@
             "--compile-commands-dir=${workspaceFolder}/",
             "--query-driver=**"
         ],
+        "bazel.buildifierExecutable": "/opt/homebrew/bin/buildifier",
+        "bazel.buildifierFixOnFormat": true,
     }
 }
