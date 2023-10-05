@@ -824,9 +824,20 @@ Of course, it is never a simple quest. Many of them spent almost the rest of the
 
 
 \vskip 1in
-The implementation of the algorithm has two difficulty: First is the difficulty of implementation of high precision arithmetic, second is the limitation of the number of digits a computer can handle. The first can be tackled by using a programming language which already has a built-in high precision arithmetic algorithm, like using Mathematica\texttrademark. The second difficulty is more tedious: since in each iteration only finite many digits are accurate, in order to obtain the precision of $N$ digits, how many digits should be stored during each iteration? Notice that it's possible the round about error can be carried over to the next iteration.
+The implementation of the algorithm has two difficulty: First is the difficulty
+of implementation of high precision arithmetic, second is the limitation of the
+number of digits a computer can handle. The first can be tackled by using a
+programming language which already has a built-in high precision arithmetic
+algorithm, like using Mathematica\texttrademark. The second difficulty is more
+tedious: since in each iteration only finite many digits are accurate, in order
+to obtain the precision of $N$ digits, how many digits should be stored during
+each iteration? Notice that it's possible the round about error can be carried
+over to the next iteration.
 
-However, these problems are taken care of automatically due to the built-in precision control in Mathematica\texttrademark. Since the report is not focused on numerical algorithms, we omit this part and give the implementation and results below:
+However, these problems are taken care of automatically due to the built-in
+precision control in Mathematica\texttrademark. Since the report is not focused
+on numerical algorithms, we omit this part and give the implementation and
+results below:
 
 \begin{lstlisting}[language=Mathematica,caption={Code}]
 q = 20; p = 6;

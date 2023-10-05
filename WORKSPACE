@@ -3,6 +3,7 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 # Hedron's Compile Commands Extractor for Bazel
 # https://github.com/hedronvision/bazel-compile-commands-extractor
+# run bazel run @hedron_compile_commands//:refresh_all to create complier commands
 http_archive(
     name = "hedron_compile_commands",
 
