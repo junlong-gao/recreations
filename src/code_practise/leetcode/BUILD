@@ -20,8 +20,8 @@ cc_test(
     name = "2",
     srcs = ["2.cc"],
     deps = [
-        "@com_google_googletest//:gtest_main",
         "//src/code_practise/leetcode/lib:ds",
+        "@com_google_googletest//:gtest_main",
     ],
 )
 
