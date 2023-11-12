@@ -90,9 +90,7 @@
 class Solution {
    unordered_map<string, int> dp;
     int search(string t, const vector<vector<int>> &stickers) {
-       //cout << t << endl;
        if (dp.count(t)) return dp[t];
-
        if (t.empty()) return 0;
 
        vector<int> mp(26, 0);
