@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <cassert>
-#include "src/code_practise/leetcode/lib/slist.h"
+#include "src/code_practise/leetcode/cpp/lib/slist.h"
 
 class Solution {
 public:

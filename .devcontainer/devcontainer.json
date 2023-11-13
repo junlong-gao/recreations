@@ -7,8 +7,15 @@
 
     "customizations": {
         "vscode": {
-          "extensions": ["bazelbuild.vscode-bazel"]
+          "extensions": [
+            "bazelbuild.vscode-bazel",
+            "golang.go"
+        ]
         }
     },
+    "containerEnv": {
+        "GOROOT":"${containerWorkspaceFolder}/.devcontainer/toolchain/go_sdk"
+    },
+    "postCreateCommand": "bash .devcontainer/bootstrap.sh",
     "remoteUser": "vscode"
 }

@@ -4,5 +4,5 @@ cc_library(
     name = "ds",
     srcs = [],
     hdrs = ["slist.h"],
-    visibility = ["//src/code_practise/leetcode:__subpackages__"],
+    visibility = ["//src/code_practise/leetcode/cpp:__subpackages__"],
 )

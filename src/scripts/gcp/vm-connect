@@ -1,8 +1,0 @@
-#!/bin/bash
-
-get_host() {
-    gcloud compute instances describe \
-       default --format='get(networkInterfaces[0].accessConfigs[0].natIP)'
-}
-
-get_host

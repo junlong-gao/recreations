@@ -1,3 +1,4 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
 load("@rules_cc//cc:defs.bzl", "cc_test")
 
 cc_test(
@@ -20,7 +21,7 @@ cc_test(
     name = "2",
     srcs = ["2.cc"],
     deps = [
-        "//src/code_practise/leetcode/lib:ds",
+        "//src/code_practise/leetcode/cpp/lib:ds",
         "@com_google_googletest//:gtest_main",
     ],
 )
